@@ -3,6 +3,26 @@ Pongo el codigo desarrollado para el proyecto de la feria virtual
 
 ### Registro
 
+Aquí se puede apreciar el `head` del index del registro.
+
+```html
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+  <link rel="shortcut icon" href="http://feriavirtual.upqroo.edu.mx/img_defaults/feria_app_icon.png" type="image/x-icon">
+    <title>Registro</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="../SeccionAdministrativa/css/bootstrap.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="mystyle.css">
+   <!-- add icon link -->
+
+</head>
+```
+Aquí se puede apreciar el `contenido` del index del registro.
+
 ```html
 <?php include("ConsultasDeRegistro.php"); ?>
 <body>
