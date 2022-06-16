@@ -244,7 +244,9 @@ if(isset($_POST['esta'])){
   $Estadosele=$_POST['esta'];
   //getMunicipiosBox($Estadosele);
 }
+```
 
+```php
 // EL USUARIO SE REGISTRA
 function InsertUsuario($Nombre, $ApellidoP, $ApellidoM, $Telefono, $Celular, $Correo, $contraseña,
 $usuario, $Nombre1, $Tipo1, $TelefonoUni1, $CorreoUni1, $NumIn11, $NumEx11, $Calle11, $Colonia11, 
@@ -393,7 +395,9 @@ $Ciudad11, $CP11, $idMunicipios11, $carreras, $rvoes, $provs, $lvl, $claveTra, $
   }
     mysqli_close($conexion);
 }
+```
 
+```php
 // SE AÑADE LA UNIVERSIDAD AL USUARIO 
 function InsertUni($Nombre, $Tipo, $UserInsertId, $TelefonoUni, $CorreoUni,
 $NumIn1, $NumEx1, $Calle1, $Colonia1, $Ciudad1, $CP1, $idMunicipios1, $carreras1, $rvoes1, $provs1, $nvl, $claveT, $per10do){
@@ -419,7 +423,9 @@ $NumIn1, $NumEx1, $Calle1, $Colonia1, $Ciudad1, $CP1, $idMunicipios1, $carreras1
   mysqli_close($conexion2);
 
 }
+```
 
+```php
 // SE AÑADE EL CONTACTO DEL INSTITUTO
 function InsertContacUni($Telefono, $Correo, $IDUniAlways){
   $conexion5=conexion10();
@@ -434,7 +440,9 @@ function InsertContacUni($Telefono, $Correo, $IDUniAlways){
   mysqli_close($conexion5);
 
 }
+```
 
+```php
 // SE AÑADE LA UBICACIÓN DEL INSTITUTO
 function InserUbica($NumIn, $NumEx, $Calle, $Colonia, $Ciudad, $CP, $idInstituto, $idMunicipios){
   $conexion6=conexion10();
@@ -448,30 +456,9 @@ function InserUbica($NumIn, $NumEx, $Calle, $Colonia, $Ciudad, $CP, $idInstituto
 
   mysqli_close($conexion6);
 }
-//funcion para crear una nueva seccion en base al nombre de la carrera
-/*function nuevaSeccion($titulo)
+```
 
-{
-
-  $conexion = conexion10();
-
-  $consulta = "INSERT INTO seccion (Nombre)
-
-  VALUES ('" . $titulo . "');";
-
-  console_log($consulta);
-
-  mysqli_query($conexion, $consulta);
-
-  $IDSeccion = mysqli_insert_id($conexion);
-
-  console_log($IDSeccion);
-
-  return $IDSeccion;
-
-  mysqli_close($conexion);
-}*/
-
+```php
 // SE AÑADEN LAS CARRERAS
 function InsertCarrera($nombreCarrera, $RVOEs, $checks, $idUniversidades, $nivel, $per){
   $conexion7=conexion10();
@@ -528,7 +515,9 @@ function InsertCarrera($nombreCarrera, $RVOEs, $checks, $idUniversidades, $nivel
   mysqli_close($conexion7);
 
 }
+```
 
+```php
 // Conseguimos los Estados
 function getEstadosBox()
 {
@@ -546,7 +535,9 @@ function getEstadosBox()
   }
   mysqli_close($conexion);
 }
+```
 
+```php
 function getNivelEducativo(){
   $conexion = conexion10();
   $consulta = "SELECT * FROM `nivel_educativo`";
@@ -562,6 +553,5 @@ function getNivelEducativo(){
   }
   mysqli_close($conexion);
 }
-
 ?>
 ```
