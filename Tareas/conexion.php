@@ -11,13 +11,7 @@
  
     $database = "feria";
   
-   /* $usuario = "feriavirtual";
- 
-   $password = "fvirtual21";
- 
-   $servidor = "localhost";
- 
-   $database = "feria";*/
+  
     //creacion de la conexion a la base de datos con mysql_conect()
     $conexion = mysqli_connect($servidor, $usuario, $password, $database) or die("No se ha podido conectar a la base de datos");
     //Seleccion de la base de datos a utilizar

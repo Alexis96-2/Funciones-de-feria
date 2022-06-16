@@ -16,15 +16,6 @@ function  conexion10()
 
   $database = "feria";
 
-  /*
-  $usuario = "feriavirtual";
-  
-  $password = "fvirtual21";
-  
-  $servidor = "localhost";
-  
-  $database = "feria"; 
-  */
 
   //creacion de la conexion a la base de datos con mysql_conect()
 
